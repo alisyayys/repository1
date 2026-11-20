@@ -1,15 +1,19 @@
-#Membuat rata-rata nilai lulus spmb
+#penentu bilangan ganjil/genap dan positif/negatif
+#percabangan
 
-a =float(input("nilai mtk"))
-b =float(input("nilai b.indo"))
-c =float(input("nilai b.inggris"))
+bilangan = int(input("masukkan bilangan: "))
 
-#proses
-nilai = ( a + b + c ) /3
-
-if nilai >= 85 :
-    print("LULUS")
-elif nilai >= 75 :
-    print("TIDAK LULUS")
+if bilangan == 0:
+    print("bilangan nol")
 else:
-    print("PERLU DIPERBAIKI")
+    if bilangan > 0:
+        jenis = "positif"
+    else:
+        jenis = "negatif"
+
+    if bilangan % 2 == 0:
+        status = "genap"
+    else: 
+        status = "ganjil"
+
+    print(f"bilangan {jenis} dan {status}")

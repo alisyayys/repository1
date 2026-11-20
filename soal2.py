@@ -1,10 +1,16 @@
-# menghitung pengulangan ganjil dan genap
-print("bilangan genap")
-for i in range (1, 101):
-    if i % 2 == 0:
-        print(i, end=" ")
+#konversi nilai angka ke huruf
+#(percabangan)
 
-print("\n\nbilangan ganjil")
-for i in range (1,100):
-    if i % 2 != 0:
-        print(i, end=" ")
+nilai = int(input("masukkan nilai: "))
+if nilai > 100 or nilai < 0:
+    print("nilai tidak valid")
+elif nilai >= 85:
+    print("Grade: A")
+elif nilai >= 70:
+    print("Grade: B")
+elif nilai >= 55:
+    print("Grade: C")
+elif nilai >= 40:
+    print("Grade: D")
+else:
+    print("Grade: E")
