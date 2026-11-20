@@ -1,0 +1,9 @@
+<?php
+echo "<h2>5. Pola Bintang Bertingkat</h2>";
+for ($i = 1; $i <= 5; $i++) {
+    for ($j = 1; $j <= $i; $j++) {
+        echo "* ";
+    }
+    echo "<br>";
+}
+echo "<hr>";
